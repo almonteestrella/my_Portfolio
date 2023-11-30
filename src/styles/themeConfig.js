@@ -21,7 +21,8 @@ export const lightTheme = {
     experienceH2: 'rgba(21, 30, 44, 1)',
     jobArticleP: '#6F74A7',
     experienceInfoBg: '#ffffff',
-    experienceButtonBg: '#F3F8FF',
+    experienceButtonBg: '#FFFFFF',
+    experienceButtonBorder: '#F3F8FF',
     experienceButtonHover: '#ffffff',
 
     //projects

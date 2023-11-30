@@ -17,11 +17,16 @@ export const Container = styled.div`
         filter: grayscale(100%);
     }
 
+    .logo-img[name="next"], .logo-img[name="github"] {
+        opacity: 0.7;
+    }
+
     &:hover {
         transform: scale(1.2);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         & .logo-img {
             filter: grayscale(0%);
+            opacity: 1;
         }
     }
 `;
@@ -98,11 +103,12 @@ export const ExperienceCardButton = styled.button`
     padding: 4rem;
     border-radius: 15px;
     background: ${(props) => props.theme.experienceButtonBg};
-    border: none;
+    border: ${(props) => props.theme.experienceButtonBorder} 1px solid;
 
     &.active_btn {
         background: ${(props) => props.theme.experienceButtonHover};
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: -25px 47px 66px 0px #00000014;
+        z-index: 20;
     }
 
     & h3 {
@@ -208,8 +214,9 @@ export const ProjectCardDiv = styled.div`
             }
         }
         & span svg {
-            font-size: 30px;
-            margin-bottom: -5px;
+            margin-left: 4px;
+            font-size: 20px;
+            margin-bottom: -4px;
         }
     }
 

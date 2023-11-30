@@ -39,7 +39,7 @@ const jobit = () => {
                         search app experience
                     </h1>
                 </header>
-                <div>
+                <div className='fixed-width'>
                     <Image
                         src='jobIt-hero.svg'
                         height={0}
@@ -75,38 +75,40 @@ const jobit = () => {
             </Section1>
 
             <Section2>
-                <RoleArticle>
-                    <div>
-                        <h5>my role</h5>
-                        <h2>front end developer</h2>
-                    </div>
-                    <div>
-                        <h5>start date</h5>
-                        <h2>febreary 10th</h2>
-                    </div>
-                    <div>
-                        <h5>end date</h5>
-                        <h2>march 10th</h2>
-                    </div>
-                </RoleArticle>
+                <div className='fixed-width'>
+                    <RoleArticle>
+                        <div>
+                            <h5>my role</h5>
+                            <h2>front end developer</h2>
+                        </div>
+                        <div>
+                            <h5>start date</h5>
+                            <h2>febreary 10th</h2>
+                        </div>
+                        <div>
+                            <h5>end date</h5>
+                            <h2>march 10th</h2>
+                        </div>
+                    </RoleArticle>
 
-                <TechnoArticle>
-                    <H3>technologies used</H3>
-                    <H2>tech stack</H2>
-                    <div className='flexDiv'>
-                        <TechLogo image='/git.svg' name='git' />
+                    <TechnoArticle>
+                        <H3>technologies used</H3>
+                        <H2>tech stack</H2>
+                        <div className='flexDiv'>
+                            <TechLogo image='/git.svg' name='git' />
 
-                        <TechLogo
-                            image='/framerMotion.svg'
-                            name='framer motion'
-                        />
+                            <TechLogo
+                                image='/framerMotion.svg'
+                                name='framer motion'
+                            />
 
-                        <TechLogo image='/react.svg' name='react' />
-                        <TechLogo image='/redux.svg' name='RTK' />
+                            <TechLogo image='/react.svg' name='react' />
+                            <TechLogo image='/redux.svg' name='RTK' />
 
-                        <TechLogo image='/tailwind.svg' name='tailwind' />
-                    </div>
-                </TechnoArticle>
+                            <TechLogo image='/tailwind.svg' name='tailwind' />
+                        </div>
+                    </TechnoArticle>
+                </div>
             </Section2>
             <Section3>
                 <div className='content'>
@@ -119,14 +121,6 @@ const jobit = () => {
                         My team and I also developed a unique job search page
                         offers a search bar and various filtering options for
                         users to find the your dream job.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Velit deserunt delectus dicta soluta unde corrupti
-                        expedita repellendus, laboriosam quidem molestiae nihil
-                        earum quasi odio inventore. Labore voluptatem harum
-                        maiores, nesciunt placeat vitae at tenetur excepturi
-                        alias quibusdam fugiat, assumenda a?
                     </p>
 
                     <H3>problem</H3>

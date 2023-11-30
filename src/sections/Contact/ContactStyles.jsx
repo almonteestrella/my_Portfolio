@@ -17,6 +17,10 @@ export const ContentDiv = styled.div`
     flex-direction: column;
     gap: 2rem;
     justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url("/pattern.svg");
+    background-size: fill;
 
     & h1 {
         text-align: center;

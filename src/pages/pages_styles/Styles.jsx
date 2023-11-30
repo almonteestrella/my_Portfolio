@@ -15,6 +15,10 @@ export const Section1 = styled.section`
 
         display: grid;
         place-content: center;
+        & .fixed-width {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
     }
 
     & header {
@@ -82,6 +86,11 @@ export const Section2 = styled.section`
 
     @media (min-width: 992px) {
         padding: 3rem 5rem;
+
+        & .fixed-width {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
     }
 
     & div {
@@ -110,7 +119,7 @@ export const Section2 = styled.section`
 
         @media (min-width: 640px) {
             justify-content: center;
-            gap: 6rem;
+            gap: 4rem;
         }
     }
 `;
@@ -123,7 +132,6 @@ export const RoleArticle = styled.article`
 
     @media (min-width: 992px) {
         flex-direction: row;
-        max-width: 70%;
     }
 
     & h2 {
@@ -135,7 +143,6 @@ export const TechnoArticle = styled.article`
     margin: 4rem auto;
     @media (min-width: 992px) {
         flex-direction: row;
-        max-width: 70%;
     }
 `;
 
@@ -159,7 +166,7 @@ export const Section3 = styled.section`
 
     @media (min-width: 992px) {
         & .content {
-            max-width: 70%;
+            max-width: 1280px;
             margin: 0 auto;
         }
         & .heading {

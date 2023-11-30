@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { Container } from './componentStyles/ComponentsStyles';
 
-const TechLogo = ({ image }) => {
+const TechLogo = ({ image, name }) => {
     return (
         <Container>
             <Image
@@ -9,6 +9,7 @@ const TechLogo = ({ image }) => {
                 alt='tech logo'
                 width={0}
                 height={0}
+                name={name}
                 className='logo-img'
             />
         </Container>

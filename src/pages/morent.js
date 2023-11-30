@@ -37,7 +37,7 @@ const morent = () => {
                     </h1>
                 </header>
 
-                <div>
+                <div className='fixed-width'>
                     <Image
                         src='morrent-hero.svg'
                         height={0}
@@ -73,43 +73,45 @@ const morent = () => {
             </Section1>
 
             <Section2>
-                <RoleArticle>
-                    <div>
-                        <h5>my role</h5>
-                        <h2>software enginner</h2>
-                    </div>
-                    <div>
-                        <h5>start date</h5>
-                        <h2>febreary 10th</h2>
-                    </div>
-                    <div>
-                        <h5>end date</h5>
-                        <h2>march 10th</h2>
-                    </div>
-                </RoleArticle>
+                <div className='fixed-width'>
+                    <RoleArticle>
+                        <div>
+                            <h5>my role</h5>
+                            <h2>software enginner</h2>
+                        </div>
+                        <div>
+                            <h5>start date</h5>
+                            <h2>febreary 10th</h2>
+                        </div>
+                        <div>
+                            <h5>end date</h5>
+                            <h2>march 10th</h2>
+                        </div>
+                    </RoleArticle>
 
-                <TechnoArticle>
-                    <H3>technologies used</H3>
-                    <H2>tech stack</H2>
-                    <div className='flexDiv'>
-                        <TechLogo image='/git.svg' name='git' />
+                    <TechnoArticle>
+                        <H3>technologies used</H3>
+                        <H2>tech stack</H2>
+                        <div className='flexDiv'>
+                            <TechLogo image='/git.svg' name='git' />
 
-                        <TechLogo image='/mongodb.svg' name='mongo' />
-                        <TechLogo
-                            image='/framerMotion.svg'
-                            name='framer motion'
-                        />
-                        <TechLogo image='/node.svg' name='node' />
-                        <TechLogo image='/react.svg' name='react' />
-                        <TechLogo image='/redux.svg' name='RTK' />
+                            <TechLogo image='/mongodb.svg' name='mongo' />
+                            <TechLogo
+                                image='/framerMotion.svg'
+                                name='framer motion'
+                            />
+                            <TechLogo image='/node.svg' name='node' />
+                            <TechLogo image='/react.svg' name='react' />
+                            <TechLogo image='/redux.svg' name='RTK' />
 
-                        <TechLogo image='/tailwind.svg' name='tailwind' />
-                    </div>
-                </TechnoArticle>
+                            <TechLogo image='/tailwind.svg' name='tailwind' />
+                        </div>
+                    </TechnoArticle>
+                </div>
             </Section2>
             <Section3>
                 <div className='content'>
-                    <p>
+                    <p className='m-1'>
                         Morent, a cutting-edge car rental application that was
                         developed using the MERN stack. The app boasts a dynamic
                         homepage that showcases featured vehicles, along with

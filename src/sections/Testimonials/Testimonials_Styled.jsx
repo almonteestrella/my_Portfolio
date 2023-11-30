@@ -26,6 +26,8 @@ export const Span = styled.span`
 
 export const Container = styled.section`
     padding: 2rem 2.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
 
     & .contentDiv {
         height: 500px;

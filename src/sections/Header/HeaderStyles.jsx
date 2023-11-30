@@ -97,14 +97,43 @@ export const NavLinks = styled.div`
 `;
 
 export const Section = styled.section`
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 
+    & .work {
+        background: #0252cd;
+        border: none;
+        padding: 2rem 3rem;
+        border-radius: 30px;
+        color: #fff;
+        letter-spacing: 1.1px;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: 0.3s linear all;
+        width: 100%;
+        text-align: center;
+
+        &:hover {
+            background: #3575d7;
+        }
+
+        @media (min-width: 992px) {
+            width: auto;
+        }
+    }
+
     @media (min-width: 992px) {
         flex-direction: row;
-        & div {
+        & div:first-child {
+            flex: 1 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        & div:nth-child(2) {
             flex: 1 1;
         }
     }
@@ -115,7 +144,6 @@ export const HeroImgDiv = styled.div`
     height: auto;
 
     @media (min-width: 992px) {
-        margin-top: -80px;
     }
 
     & .hero-img {

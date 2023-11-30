@@ -31,6 +31,9 @@ export const SkillsDiv = styled.div`
     gap: 6rem;
     padding: 0 2rem;
 
+    max-width: 1280px;
+    margin: 0 auto;
+
     @media (min-width: 992px) {
         display: grid;
         grid-template-columns: repeat(6, 1fr);

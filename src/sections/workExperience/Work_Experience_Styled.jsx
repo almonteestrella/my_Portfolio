@@ -27,6 +27,9 @@ export const HeaderDiv = styled.div`
 export const Container = styled.section`
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 1280px;
+
     gap: 2rem;
     & div {
         display: flex;

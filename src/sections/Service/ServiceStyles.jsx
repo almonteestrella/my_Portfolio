@@ -31,6 +31,8 @@ export const ServicesDiv = styled.div`
     flex-direction: column;
     gap: 3rem;
     margin-bottom: 40px;
+    margin: 0 auto;
+    max-width: 1280px;
 
     @media (min-width: 992px) {
         flex-direction: row;

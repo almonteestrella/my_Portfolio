@@ -109,7 +109,9 @@ const Header = () => {
                         </P>
 
                         <BtnContainer>
-                            <Button type='button'>my work</Button>
+                            <Link href='#projects' className='work'>
+                                my work
+                            </Link>
                             <CopyToClipboard />
                         </BtnContainer>
                     </div>
