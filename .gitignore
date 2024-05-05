@@ -4,9 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-
-# local env files
-.env
+.yarn/install-state.gz
 
 # testing
 /coverage
