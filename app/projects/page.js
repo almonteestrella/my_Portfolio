@@ -21,20 +21,17 @@ const ProjectPage = () => {
                     </p>
                 </div>
 
-                <div>
-                    {/* <Link href={`/projects/${project}`}>
-                        <Image
-                            src='/sampleProject.svg'
-                            width={678}
-                            height={595}
-                            alt='xxx'
-                        />
-                    </Link> */}
+                <section className='flex flex-col lg:flex-row gap-4'>
                     <ProjectList />
-                </div>
+                    <ProjectList />
+                    <ProjectList />
+                    <ProjectList />
+                </section>
             </section>
         </main>
     );
 };
 
 export default ProjectPage;
+
+// grid grid-rows-2 lg:grid-cols-2 gap-4

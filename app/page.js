@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Services from '@/components/Services';
 import Testimonials from '@/components/Testimonials';
 
@@ -8,7 +9,7 @@ export default function HomePage() {
     return (
         <main className='dark:bg-[#192333]'>
             <section className='lg:flex lg:items-center container'>
-                <div className='flex-1 flex flex-col gap-y-4'>
+                <div className='flex-1 flex flex-col gap-y-6'>
                     <h3 className='text-[#0252CD] uppercase tracking-widest font-medium dark:text-[#428DFF]'>
                         hi, i am juan almonte
                     </h3>
@@ -26,12 +27,12 @@ export default function HomePage() {
                         repellendus exercitationem asperiores
                     </p>
 
-                    <div className='flex gap-4 items-center flex-col text-center lg:flex-row'>
+                    <div>
                         <Link
-                            href='#projects'
-                            className='bg-gradient-to-r from-[#562BFF] to-[#7DA5FF] px-6 py-3 rounded-full text-[#ffffff] capitalize w-full'
+                            href='/contact'
+                            className='bg-gradient-to-r from-[#562BFF] to-[#7DA5FF] px-6 py-3 rounded-xl text-[#ffffff] capitalize custom-transition hover:text-slate-200'
                         >
-                            my work
+                            get started
                         </Link>
                     </div>
                 </div>
@@ -48,6 +49,7 @@ export default function HomePage() {
 
             <Services />
             <Testimonials />
+            <Footer />
         </main>
     );
 }
